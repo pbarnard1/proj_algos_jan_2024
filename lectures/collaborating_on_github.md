@@ -66,17 +66,19 @@ Make sure you select the correct branches!  Contact the owner or another collabo
 If the pull request is approved, your code will be merged.
 
 ## For ALL:
-It's important to pull ALL the time!!!  Do it at the start of every day at least!!!  To bring in the latest code, do the following:
+It's important to pull ALL the time!!!  Do it at the start of every day at least!!!  
+
+To bring in the latest code, **make sure you're in the main (or whichever branch has the primary or working code) branch!!**  (If not, do `git checkout main` [or `git checkout <branch_to_go_to>`].)  Then do the following:
 ```
-git pull origin name_of_branch_to_put_code_into
+git pull
 ```
-For most, if not all of you, it'll be the development branch.
+For most, if not all of you, it'll be the main/development branch.  The `git pull` command brings in the latest version of the *current* branch you're in, which is why it's important to switch to the main branch!
 
 In order to bring in the latest code to your branch, make sure you're in that branch first!!  Once you are, then do the following:
 ```
 git merge name_to_merge_from
 ```
-This will bring in the code from the branch you're merging from, which likely is the development branch.
+This will bring in the code from the branch you're merging from, which likely is the main/development branch.
 
 From here, it's `git add`, `git commit`, `git push origin name_of_your_branch`, make a pull request, etc.  Remember to pull constantly and merge into your branch as needed!
 
